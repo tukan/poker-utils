@@ -1,0 +1,12 @@
+InstalledFiles
+_yardoc
+pkg
+tmp
+.idea
+*.pyc
+.DS_Store
+build
+dist
+docs/_build
+*.lprof
+*.ipynb
