@@ -74,3 +74,38 @@ optional arguments:
   --find-all            search for all occurrences of the hand_id
   --version             show program's version number and exit
 ```
+
+## filter_hands_by_player.py
+
+Filters hands where player appears in seats (cards were dealled to player).
+Hands in file must be divided by an empty line.
+
+## Example:
+
+```
+python filter_hands_by_player -d hands/ tukan
+```
+
+### Usage:
+
+```
+usage: filter_hands_by_player [-h] [-d DIR] [-f FILE] [-o OUT] [-b BATCH]
+                              [--no-progressbar] [--version]
+                              player
+
+Filters hands by player. Hands in file mast be divided by an empty line.
+
+positional arguments:
+  player                Player to filter by
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DIR, --dir DIR     directory with hand history files
+  -f FILE, --file FILE  hand history file
+  -o OUT                file name to print found hands (default: out.txt)
+  -b BATCH, --batch BATCH
+                        save by BATCH hands per file
+  --no-progressbar      don't print a progressbar
+  --version             show program's version number and exit
+  ```
+
