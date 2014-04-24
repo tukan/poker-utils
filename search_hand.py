@@ -77,7 +77,7 @@ if __name__ == "__main__":
                     if not find_all:
                         exit(0)
             else:
-                # As far as I know Python uses Use Boyer-Moore-Horspool algorithm to search a substring in a string,
+                # As far as I know Python uses the Boyer-Moore-Horspool algorithm for searching a substring in a string,
                 # here is a link to Python svn repo:
                 # http://svn.python.org/view/python/trunk/Objects/stringlib/fastsearch.h?revision=77470&view=markup
                 in_hand = hand_id in line
