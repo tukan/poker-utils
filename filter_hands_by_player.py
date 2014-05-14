@@ -177,9 +177,9 @@ def main():
     else:
         files_iter = files
 
-    total_hands, hands_filtered = 0, 0
     t0 = time.time()
-    total_hands, hands_filtered = filter_hands(files_iter, args.player, out_name, out_ext, args.batch)
+    player = args.player.decode('utf-8')
+    total_hands, hands_filtered = filter_hands(files_iter, player, out_name, out_ext, args.batch)
     t1 = time.time()
 
     print
